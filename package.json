@@ -1,0 +1,20 @@
+{
+  "name": "ollama-deep-researcher",
+  "version": "0.0.1",
+  "description": "Web-based research assistant using Ollama and web search APIs",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "dependencies": {
+    "@langchain/core": "latest",
+    "@langchain/community": "latest",
+    "axios": "latest",
+    "duckduckgo-search": "latest",
+    "@langchain/langgraph": "latest",
+    "node-html-parser": "latest",
+    "dotenv": "latest"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
