@@ -18,7 +18,7 @@ A powerful web-based research assistant built with Node.js that leverages Ollama
 
 ### Setup
 ```bash
-git clone https://github.com/your-username/ollama-deep-researcher.git
+git clone https://github.com/noubre/ollama-deep-researcher.git
 cd ollama-deep-researcher
 npm install
 cp .env.example .env
