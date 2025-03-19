@@ -2,12 +2,15 @@
 
 A powerful web-based research assistant built with Node.js that leverages Ollama LLM to generate intelligent search queries and fetch comprehensive results from popular search APIs (Tavily, Perplexity, or DuckDuckGo).
 
+Based on [Ollama Deep Researcher](https://github.com/langchain-ai/ollama-deep-researcher).
+
 ## ✨ Features
 
 - **Intelligent Query Generation** - Uses Ollama LLM to create optimized search queries
 - **Multiple Search APIs** - Supports Tavily, Perplexity, and DuckDuckGo
 - **Iterative Research** - Refines searches and builds a comprehensive summary
 - **Simple CLI Interface** - Easy to use from command line
+- **Modular Architecture** - Easily extensible for adding more features
 
 ## 🚀 Quickstart
 
@@ -72,7 +75,11 @@ The application follows a modular architecture:
 
 ### Custom Models
 
-You can use different Ollama models by changing the `OLLAMA_MODEL` variable in your `.env` file.
+You can use different Ollama models by changing the `OLLAMA_MODEL` variable in your `.env` file. For example:
+
+```bash
+OLLAMA_MODEL=llama3:8b
+```
 
 ### Debugging
 
@@ -80,6 +87,16 @@ For debugging issues:
 ```bash
 node debug.js "Your research topic"
 ```
+
+This will provide more verbose output to help troubleshoot any problems.
+
+## 📝 Changelog
+
+### v0.0.1 (Initial Release)
+- Basic research functionality
+- Support for Tavily, Perplexity, and DuckDuckGo APIs
+- Command-line interface
+- LangGraph-based research workflow
 
 ## 🤝 Contributing
 
@@ -91,6 +108,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
+### Development Guidelines
+- Follow existing code style
+- Add tests for new features when possible
+- Update documentation to reflect changes
+
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
